@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "SyncTube Ambilight",
+  "version": "1.0",
+  "description": "Ambilight for videos played inside sync.hilas.cl (YouTube, Twitch, any iframe player). No tab sharing needed.",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "all_frames": true,
+      "match_about_blank": false,
+      "run_at": "document_idle",
+      "js": ["frame.js"]
+    }
+  ]
+}
